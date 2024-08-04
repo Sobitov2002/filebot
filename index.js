@@ -11,6 +11,15 @@ const pdfFileIds = [
   // Qo'shimcha fayl IDlarini shu yerga qo'shing
 ];
 
+const channelUsername = '@aswwqfe';
+
+// Xush kelibsiz xabari
+const infoMessage = `
+Assalomu aleykum!
+
+✅ Ushbu telegram bot sizga manfatli bo'ladi degan umidamiz!
+✅ Kelajagingizni "DINAKOREANACADEMY" bilan qur!
+`;
 // 1-kanal nomi
 const channelUsername = '@aswwqfe';
 
@@ -67,6 +76,7 @@ bot.on('callback_query', async (callbackQuery) => {
 
   if (data === 'joined') {
     try {
+      bot.sendMessage(chatId, infoMessage, options);
       const res = await axios.get(`https://api.telegram.org/bot${token}/getChatMember?chat_id=${channelUsername}&user_id=${userId}`);
       const status = res.data.result.status;
 
