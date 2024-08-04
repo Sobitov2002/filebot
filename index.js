@@ -42,7 +42,7 @@ bot.onText(/\/start/, async (msg) => {
     }
   };
 
-  bot.sendMessage(chatId, 'Salom! Iltimos, quyidagi tugmalardan foydalaning:', options);
+  bot.sendMessage(chatId, 'Assalomu aleykum ! ✅ Ushbu telegram bot sizga manfatli bo\'ladi degan umidamiz ! ✅ Kelajagingizni "DINAKOREANACADEMY" bilan qur!', options);
 });
 
 // Maxsus buyruq orqali foydalanuvchilar sonini ko'rsatish
