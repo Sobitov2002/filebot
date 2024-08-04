@@ -21,8 +21,7 @@ bot.onText(/\/start/, async (msg) => {
     reply_markup: {
       inline_keyboard: [
         [
-          { text: 'Kanalga a\'zo bo\'lish', url: `https://t.me/${channelUsername.substring(1)}` },
-          { text: 'A\'zo bo\'ldim', callback_data: 'joined' }
+          { text: 'Kanalga a\'zo bo\'lish', url: `https://t.me/${channelUsername.substring(1)}` }
         ]
       ]
     }
@@ -33,6 +32,9 @@ bot.onText(/\/start/, async (msg) => {
     const status = res.data.result.status;
 
     if (status === 'member' || status === 'administrator' || status === 'creator') {
+      options.reply_markup.inline_keyboard.push([
+        { text: 'A\'zo bo\'ldim', callback_data: 'joined' }
+      ]);
       bot.sendMessage(chatId, 'Siz allaqachon kanalga a’zosiz!', options);
 
       // Fayllarni yuborish
