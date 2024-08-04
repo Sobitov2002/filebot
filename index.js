@@ -51,7 +51,7 @@ bot.onText(/\/usercount/, (msg) => {
   const userId = msg.from.id;
 
   // Sizning user ID'nizni tekshiring, agar bu siz bo'lsangiz
-  const adminId = 'YOUR_USER_ID'; // Sizning Telegram ID'ingizni shu yerga qo'ying
+  const adminId = '5812196124'; // Sizning Telegram ID'ingizni shu yerga qo'ying
 
   if (userId === adminId) {
     bot.sendMessage(chatId, `Jami foydalanuvchilar soni: ${users.length}`);
@@ -82,7 +82,7 @@ bot.on('callback_query', async (callbackQuery) => {
       }
     } catch (error) {
       console.error(error);
-      bot.sendMessage(chatId, 'Kanalga a’zo ekanligingizni tekshirishda xatolik yuz berdi.');
+      // bot.sendMessage(chatId, 'Kanalga a’zo ekanligingizni tekshirishda xatolik yuz berdi.');
     }
   }
 });
