@@ -25,13 +25,12 @@ if (fs.existsSync(usersFile)) {
 bot.onText(/\/start/, async (msg) => {
   const chatId = msg.chat.id;
   const userId = msg.from.id;
-  
+
   if (!users.includes(userId)) {
     users.push(userId);
     fs.writeFileSync(usersFile, JSON.stringify(users));
   }
 
-  // Foydalanuvchini kanalga a'zoligi tekshirilmoqda
   const options = {
     reply_markup: {
       inline_keyboard: [
@@ -44,6 +43,21 @@ bot.onText(/\/start/, async (msg) => {
   };
 
   bot.sendMessage(chatId, 'Salom! Iltimos, quyidagi tugmalardan foydalaning:', options);
+});
+
+// Maxsus buyruq orqali foydalanuvchilar sonini ko'rsatish
+bot.onText(/\/usercount/, (msg) => {
+  const chatId = msg.chat.id;
+  const userId = msg.from.id;
+
+  // Sizning user ID'nizni tekshiring, agar bu siz bo'lsangiz
+  const adminId = '5812196124'; // Sizning Telegram ID'ingizni shu yerga qo'ying
+
+  if (userId === adminId) {
+    bot.sendMessage(chatId, `Jami foydalanuvchilar soni: ${users.length}`);
+  } else {
+    bot.sendMessage(chatId, 'Sizda bu ma\'lumotni ko\'rish huquqi yo\'q.');
+  }
 });
 
 bot.on('callback_query', async (callbackQuery) => {
