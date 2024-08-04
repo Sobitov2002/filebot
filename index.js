@@ -46,7 +46,7 @@ bot.onText(/\/start/, async (msg) => {
     }
   } catch (error) {
     console.error(error);
-    bot.sendMessage(chatId, 'Kanalga a’zo ekanligingizni tekshirishda xatolik yuz berdi.');
+    // bot.sendMessage(chatId, 'Kanalga a’zo ekanligingizni tekshirishda xatolik yuz berdi.');
   }
 });
 
