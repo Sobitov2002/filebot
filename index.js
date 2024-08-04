@@ -71,7 +71,7 @@ bot.on('callback_query', async (callbackQuery) => {
       const status = res.data.result.status;
 
       if (status === 'member' || status === 'administrator' || status === 'creator') {
-        bot.sendMessage(chatId, 'Siz allaqachon kanalga a’zosiz! Yana bir bor kanalda joylashgan fayllarni ko\'rishingiz mumkin.');
+        bot.sendMessage(chatId, '✅ Kanalimizga xush kelibsiz ! ✅ Bizni tanlaganizdan xursandmiz 😌');
 
         // Fayllarni yuborish
         for (const fileId of pdfFileIds) {
