@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require('fs');
 const axios = require('axios');
-const token = 'YOUR_BOT_TOKEN';
+const token = '7291745969:AAFPQ-SZnk8dZb3MvqfFDf2jGPLHQEl8NhQ';
 const bot = new TelegramBot(token, { polling: true });
 
 // PDF fayllar ro'yxati
