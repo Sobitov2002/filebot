@@ -44,32 +44,32 @@ const pdfFiles = {
               'BQACAgUAAx0CeZJ9SgADwWayVa8e8mbtoBEGhdS91mXNjUmZAAKgAQACGry5VbCjeAMl0L8oNQQ',
               
               
-              ' BQACAgUAAx0CeZJ9SgADzGayVqYT6g1vpQqc6GBarN-pN3YWAALlAQACGry5VdIDEj6utp-KNQQ',
-              'QACAgUAAx0CeZJ9SgADzWayVqbNQedh98Yb-2hrTWeVoXQ_AALmAQACGry5VTHNobArcRx5NQQ',
-              'BQACAgUAAx0CeZJ9SgAD0mayV1eAsZ3N7zEi6rrVTy8lAU6OAAKjAQACGry5VVXO1w1wmwRQNQQ',
-              'BQACAgUAAx0CeZJ9SgAD02ayV1fJ1oWFQiE5QUs-TQhEdWobAAKkAQACGry5VdrQSur95xTrNQQ',
+              // ' BQACAgUAAx0CeZJ9SgADzGayVqYT6g1vpQqc6GBarN-pN3YWAALlAQACGry5VdIDEj6utp-KNQQ',
+              // 'QACAgUAAx0CeZJ9SgADzWayVqbNQedh98Yb-2hrTWeVoXQ_AALmAQACGry5VTHNobArcRx5NQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD0mayV1eAsZ3N7zEi6rrVTy8lAU6OAAKjAQACGry5VVXO1w1wmwRQNQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD02ayV1fJ1oWFQiE5QUs-TQhEdWobAAKkAQACGry5VdrQSur95xTrNQQ',
 
-              'BQACAgUAAx0CeZJ9SgAD1GayV4bjAAHXZur0fhhrWj3O0LUHsgAC5wEAAhq8uVX0uz2p4H1oljUE',
-              'BQACAgUAAx0CeZJ9SgAD1WayV4ZclAcuOhaFA-aNYAHnw_2yAALoAQACGry5VbBehaHOE4RmNQQ',
-              'BQACAgUAAx0CeZJ9SgAD1mayV7b6QCT2Rx9I_v5ifYaUtVTaAAKlAQACGry5Vbw0qYcJxu70NQQ',
-              'BQACAgUAAx0CeZJ9SgAD12ayV7afsz-Nr3P9zJMRuPDZmfm-AAKnAQACGry5VY4zGwR_u5LnNQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD1GayV4bjAAHXZur0fhhrWj3O0LUHsgAC5wEAAhq8uVX0uz2p4H1oljUE',
+              // 'BQACAgUAAx0CeZJ9SgAD1WayV4ZclAcuOhaFA-aNYAHnw_2yAALoAQACGry5VbBehaHOE4RmNQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD1mayV7b6QCT2Rx9I_v5ifYaUtVTaAAKlAQACGry5Vbw0qYcJxu70NQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD12ayV7afsz-Nr3P9zJMRuPDZmfm-AAKnAQACGry5VY4zGwR_u5LnNQQ',
 
-              'BQACAgUAAx0CeZJ9SgAD2mayWDUmDuOr-5WbuFEulObo4HcMAALpAQACGry5VW7xPA3NCUtXNQQ',
-              'BQACAgUAAx0CeZJ9SgAD22ayWDXW8BRgmkpOshJ99Yost_uBAALqAQACGry5VVgojIIPZeG3NQQ',
-              'BQACAgUAAx0CeZJ9SgAD3GayWHv6P9tZHE8o11JQl16rFZJRAAKpAQACGry5VcP9Bz5rFkL8NQQ',
-              'BQACAgUAAx0CeZJ9SgAD3WayWHux_xjTaYW7UmwTQvenwrcCAAKrAQACGry5VQABnvklQO3QizUE',
+              // 'BQACAgUAAx0CeZJ9SgAD2mayWDUmDuOr-5WbuFEulObo4HcMAALpAQACGry5VW7xPA3NCUtXNQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD22ayWDXW8BRgmkpOshJ99Yost_uBAALqAQACGry5VVgojIIPZeG3NQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD3GayWHv6P9tZHE8o11JQl16rFZJRAAKpAQACGry5VcP9Bz5rFkL8NQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD3WayWHux_xjTaYW7UmwTQvenwrcCAAKrAQACGry5VQABnvklQO3QizUE',
 
-              ' BQACAgUAAx0CeZJ9SgAD3mayWIy2IVujs9dAO31i-YF7l08nAALrAQACGry5VeyCCmoInh-6NQQ',
-              'BQACAgUAAx0CeZJ9SgAD32ayWIw1V3J9KmLFfKyilPPdThAjAALsAQACGry5VdefIdi75ZgYNQQ',
-              'BQACAgUAAx0CeZJ9SgAD4GayWNg8ldl0Dd_YM09lmDi2Lu1zAAKvAQACGry5VQRRt_hjJdXzNQQ',
-              'BQACAgUAAx0CeZJ9SgAD4WayWNji39mdj-trlAKCIVSGyENrAAKyAQACGry5VYAitpD1VhmDNQQ',
+              // ' BQACAgUAAx0CeZJ9SgAD3mayWIy2IVujs9dAO31i-YF7l08nAALrAQACGry5VeyCCmoInh-6NQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD32ayWIw1V3J9KmLFfKyilPPdThAjAALsAQACGry5VdefIdi75ZgYNQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD4GayWNg8ldl0Dd_YM09lmDi2Lu1zAAKvAQACGry5VQRRt_hjJdXzNQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD4WayWNji39mdj-trlAKCIVSGyENrAAKyAQACGry5VYAitpD1VhmDNQQ',
 
-              'BQACAgUAAx0CeZJ9SgAD4mayWVgvQBRLUE2wnIzao0ngWVXTAALtAQACGry5VYOnwmbkPGmbNQQ',
-              'BQACAgUAAx0CeZJ9SgAD42ayWVixtVd9cxgmsu3di4TmzBlUAALuAQACGry5VbhwClN0RGhaNQQ',
-              'BQACAgUAAx0CeZJ9SgAD5GayWVj-t6bn8Hg9SLApyzGVXhHwAALvAQACGry5VZqr8kRBuIr_NQQ',
-              'BQACAgUAAx0CeZJ9SgAD5WayWcTAir_f6WY2y40g00Pbs23PAALPAQACGry5VXaNEVrHkP0fNQQ',
-              'BQACAgUAAx0CeZJ9SgAD5mayWcQTkNqW-BogsApLlhkkx4GnAALQAQACGry5VacT7t0TsYJ5NQQ',
-              'BQACAgUAAx0CeZJ9SgAD52ayWcTxW5lr9ZYRQlj9pl0uyoX1AALRAQACGry5VZ_hMppGWA51NQQ'
+              // 'BQACAgUAAx0CeZJ9SgAD4mayWVgvQBRLUE2wnIzao0ngWVXTAALtAQACGry5VYOnwmbkPGmbNQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD42ayWVixtVd9cxgmsu3di4TmzBlUAALuAQACGry5VbhwClN0RGhaNQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD5GayWVj-t6bn8Hg9SLApyzGVXhHwAALvAQACGry5VZqr8kRBuIr_NQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD5WayWcTAir_f6WY2y40g00Pbs23PAALPAQACGry5VXaNEVrHkP0fNQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD5mayWcQTkNqW-BogsApLlhkkx4GnAALQAQACGry5VacT7t0TsYJ5NQQ',
+              // 'BQACAgUAAx0CeZJ9SgAD52ayWcTxW5lr9ZYRQlj9pl0uyoX1AALRAQACGry5VZ_hMppGWA51NQQ'
 
             ],
   'file_3': ['BQACAgQAAx0CeZJ9SgAD6GayWsQAAR8RX8e0QaTKYxdBOSk_CwACxQsAAmVoCFOXCiHtQCRUcDUE', 
@@ -88,7 +88,7 @@ const pdfFiles = {
 };
 
 // 1-kanal nomi
-const channelUsername = '@aswwqfe';
+const channelUsername = '@dinakorean';
 
 // Foydalanuvchilar ro'yxatini saqlash 
 const usersFile = 'users.json';
