@@ -6,7 +6,7 @@ const bot = new TelegramBot(token, { polling: true });
 
 // PDF fayllar ro'yxati
 const pdfFiles = {
-  'file_1': ['FILE_ID_1', 'FILE_ID_2'],
+  'file_1': ['BQACAgUAAx0CeZJ9SgADSWayDy3gXG56yCe-GarTqammiQbVAAKLAQACGry5VYk3AjA0F6N8NQQ', 'BQACAgUAAx0CeZJ9SgADSWayDy3gXG56yCe-GarTqammiQbVAAKLAQACGry5VYk3AjA0F6N8NQQ'],
   'file_2': ['BQACAgIAAx0CeZJ9SgADQmau-Egl8BXfpS35PIOzQ0EOZrmjAAINVgACUHkJSeiPMcASgX55NQQ', 'BQACAgIAAx0CeZJ9SgADQmau-Egl8BXfpS35PIOzQ0EOZrmjAAINVgACUHkJSeiPMcASgX55NQQ', 'BQACAgIAAx0CeZJ9SgADQmau-Egl8BXfpS35PIOzQ0EOZrmjAAINVgACUHkJSeiPMcASgX55NQQ'],
   'file_3': ['FILE_ID_6', 'FILE_ID_7', 'FILE_ID_8'],
   'file_4': ['FILE_ID_9', 'FILE_ID_10'],
