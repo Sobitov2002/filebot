@@ -54,7 +54,7 @@ bot.onText(/\/usercount/, (msg) => {
   const userId = msg.from.id;
 
   // Sizning user ID'nizni tekshiring, agar bu siz bo'lsangiz
-  const adminId = '7291745969:AAFPQ-SZnk8dZb3MvqfFDf2jGPLHQEl8NhQ'; // Sizning Telegram ID'ingizni shu yerga qo'ying
+  const adminId = ''; // Sizning Telegram ID'ingizni shu yerga qo'ying
 
   if (userId === adminId) {
     bot.sendMessage(chatId, `Jami foydalanuvchilar soni: ${users.length}`);
