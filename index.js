@@ -77,12 +77,12 @@ bot.on('callback_query', async (callbackQuery) => {
         const options = {
           reply_markup: {
             inline_keyboard: [
-              [{ text: 'Bo\'lim 1', callback_data: 'file_1' }],
-              [{ text: 'Bo\'lim 2', callback_data: 'file_2' }],
-              [{ text: 'Bo\'lim 3', callback_data: 'file_3' }],
-              [{ text: 'Bo\'lim 4', callback_data: 'file_4' }],
-              [{ text: 'Bo\'lim 5', callback_data: 'file_5' }],
-              [{ text: 'Bo\'lim 6', callback_data: 'file_6' }]
+              [{ text: '✅ 비타민 한국어 ', callback_data: 'file_1' }],
+              [{ text: '✅ 서울대 한국어 ', callback_data: 'file_2' }],
+              [{ text: '✅ 재미있는 한국어', callback_data: 'file_3' }],
+              [{ text: '✅ 한국어 ', callback_data: 'file_4' }],
+              [{ text: '✅  Grammar in use', callback_data: 'file_5' }],
+              // [{ text: 'Bo\'lim 6', callback_data: 'file_6' }]
             ]
           }
         };
