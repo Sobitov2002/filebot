@@ -17,7 +17,7 @@ const pdfFiles = {
 // 1-kanal nomi
 const channelUsername = '@aswwqfe';
 
-// Foydalanuvchilar ro'yxatini saqlash uchun fayl
+// Foydalanuvchilar ro'yxatini saqlash 
 const usersFile = 'users.json';
 let users = [];
 if (fs.existsSync(usersFile)) {
