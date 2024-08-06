@@ -1,15 +1,18 @@
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require('fs');
 const axios = require('axios');
-const token = '7291745969:AAFPQ-SZnk8dZb3MvqfFDf2jGPLHQEl8NhQ';
+const token = 'YOUR_BOT_TOKEN';
 const bot = new TelegramBot(token, { polling: true });
 
-// 1-kanalda joylashgan fayllar ro'yxati
-const pdfFileIds = [
-  'BQACAgIAAx0CeZJ9SgADQmau-Egl8BXfpS35PIOzQ0EOZrmjAAINVgACUHkJSeiPMcASgX55NQQ',
-  'YOUR_SECOND_FILE_ID', // Yana bir fayl ID sini qo'shing
-  // Qo'shimcha fayl IDlarini shu yerga qo'shing
-];
+// PDF fayllar ro'yxati
+const pdfFiles = {
+  'file_1': ['FILE_ID_1', 'FILE_ID_2'],
+  'file_2': ['FILE_ID_3', 'FILE_ID_4', 'FILE_ID_5'],
+  'file_3': ['FILE_ID_6', 'FILE_ID_7', 'FILE_ID_8'],
+  'file_4': ['FILE_ID_9', 'FILE_ID_10'],
+  'file_5': ['FILE_ID_11'],
+  'file_6': ['FILE_ID_12', 'FILE_ID_13', 'FILE_ID_14', 'FILE_ID_15']
+};
 
 // 1-kanal nomi
 const channelUsername = '@aswwqfe';
@@ -51,7 +54,7 @@ bot.onText(/\/usercount/, (msg) => {
   const userId = msg.from.id;
 
   // Sizning user ID'nizni tekshiring, agar bu siz bo'lsangiz
-  const adminId = '5812196124'; // Sizning Telegram ID'ingizni shu yerga qo'ying
+  const adminId = '7291745969:AAFPQ-SZnk8dZb3MvqfFDf2jGPLHQEl8NhQ'; // Sizning Telegram ID'ingizni shu yerga qo'ying
 
   if (userId === adminId) {
     bot.sendMessage(chatId, `Jami foydalanuvchilar soni: ${users.length}`);
@@ -71,18 +74,29 @@ bot.on('callback_query', async (callbackQuery) => {
       const status = res.data.result.status;
 
       if (status === 'member' || status === 'administrator' || status === 'creator') {
-        bot.sendMessage(chatId, '✅ Bizni tanlaganizdan xursandmiz 😌');
-
-        // Fayllarni yuborish
-        for (const fileId of pdfFileIds) {
-          await bot.sendDocument(chatId, fileId);
-        }
+        const options = {
+          reply_markup: {
+            inline_keyboard: [
+              [{ text: 'Bo\'lim 1', callback_data: 'file_1' }],
+              [{ text: 'Bo\'lim 2', callback_data: 'file_2' }],
+              [{ text: 'Bo\'lim 3', callback_data: 'file_3' }],
+              [{ text: 'Bo\'lim 4', callback_data: 'file_4' }],
+              [{ text: 'Bo\'lim 5', callback_data: 'file_5' }],
+              [{ text: 'Bo\'lim 6', callback_data: 'file_6' }]
+            ]
+          }
+        };
+        bot.sendMessage(chatId, '✅ Bizni tanlaganizdan xursandmiz 😌 Qaysi bo\'limni tanlaysiz?', options);
       } else {
         bot.sendMessage(chatId, `Iltimos, kanalimizga a'zo bo'ling: ${channelUsername}`);
       }
     } catch (error) {
       console.error(error);
-      // bot.sendMessage(chatId, 'Kanalga a’zo ekanligingizni tekshirishda xatolik yuz berdi.');
+      bot.sendMessage(chatId, 'Kanalga a’zo ekanligingizni tekshirishda xatolik yuz berdi.');
+    }
+  } else if (pdfFiles[data]) {
+    for (const fileId of pdfFiles[data]) {
+      await bot.sendDocument(chatId, fileId);
     }
   }
 });
