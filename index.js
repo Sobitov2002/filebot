@@ -10,7 +10,7 @@ const pdfFiles = {
   'file_2': ['FILE_ID_3', 'FILE_ID_4', 'FILE_ID_5'],
   'file_3': ['FILE_ID_6', 'FILE_ID_7', 'FILE_ID_8'],
   'file_4': ['FILE_ID_9', 'FILE_ID_10'],
-  'file_5': ['FILE_ID_11'],
+  'file_5': ['BQACAgIAAx0CeZJ9SgADQmau-Egl8BXfpS35PIOzQ0EOZrmjAAINVgACUHkJSeiPMcASgX55NQQ'],
   'file_6': ['FILE_ID_12', 'FILE_ID_13', 'FILE_ID_14', 'FILE_ID_15']
 };
 
