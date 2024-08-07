@@ -67,7 +67,7 @@ bot.on('callback_query', async (callbackQuery) => {
         const options = {
           reply_markup: {
             inline_keyboard: [
-              [{ text: 'DinaKoreanSAcademy', url: 'https://t.me/dinavlogbot' }]
+              [{ text: 'DinaKoreanAcademy', url: 'https://t.me/dinavlogbot' }]
             ]
           }
         };
